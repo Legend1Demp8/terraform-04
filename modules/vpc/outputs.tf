@@ -1,9 +1,9 @@
-output "network_id" {
-  value       = yandex_vpc_network.this.id
-  description = "ID созданной сети"
+output "network" {
+  value       = yandex_vpc_network.this
+  description = "Объект созданной сети VPC со всеми атрибутами"
 }
 
-output "subnet_id" {
-  value       = yandex_vpc_subnet.this.id
-  description = "ID созданной подсети"
+output "subnet" {
+  value       = yandex_vpc_subnet.this
+  description = "Объект созданной подсети со всеми атрибутами"
 }
